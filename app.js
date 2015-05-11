@@ -12,8 +12,6 @@ var about = require('./routes/about');
 var app = express();
 
 app.locals.points = "8,700";
-app.locals.videodata = require('./videodata.json');
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
