@@ -8,14 +8,12 @@
 
     <% include templates/header.ejs %>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p><%= name %></p>
+    <h3><%= videodata.categoryName %></h3>
 
     <ul>
-      <% for (var i = 0; i < 5; i++){ %>
-        <li> Tuna </li>
-      <% } %>
+      <% videodata.categories.forEach(function(item){%>
+        <li><%= item.categoryName %></li>
+      <% }); %>
     </ul>
 
   </body>
